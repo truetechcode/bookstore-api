@@ -34,7 +34,6 @@ module BookstoreApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-<<<<<<< HEAD
     
     # config.middleware.insert_before 0, "Rack::Cors" do
     #   allow do
@@ -46,18 +45,5 @@ module BookstoreApi
     #       )
     #   end
     # end
-=======
-    config.middleware.insert_before 0, "Rack::Cors" do
-      allow do
-        origins '*'
-        resource(
-          '*',
-          headers: :any,
-          methods: [:get, :patch, :put, :delete, :post, :options]
-          )
-      end
-    end
-    
->>>>>>> fecf21b97de68911c3f7dc48ad7f4e063f7d529b
   end
 end
